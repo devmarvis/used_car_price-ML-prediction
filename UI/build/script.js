@@ -24,7 +24,7 @@ form.addEventListener("submit", (e) => {
         console.log(data);
         console.log(data["price"]);
         
-        price.innerHTML = data["price"].toString()
+        price.innerHTML = "₹" + (data["price"] * 1000)
         predicted_tag.classList.remove("hidden")
         predicted_tag.classList.add("flex")
 

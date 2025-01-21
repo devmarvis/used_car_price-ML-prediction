@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <!-- Logo and Title -->
+                <div class="flex items-center space-x-4">
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl font-bold text-white">AutoValue Pro</h1>
+                        <span class="text-sm text-blue-200">ML Car Price Prediction</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="text-gray-100 hover:text-white transition-colors duration-300">Home</a>
+                    <a href="#" class="text-gray-100 hover:text-white transition-colors duration-300">Predict</a>
+                    <a href="#" class="text-gray-100 hover:text-white transition-colors duration-300">History</a>
+                    <a href="./about.html" class="text-gray-100 hover:text-white transition-colors duration-300">About</a>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-white hover:text-blue-200">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Main Content Section -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Header Section -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">About AutoValue Pro</h1>
+                <p class="text-xl text-gray-600">Your Trusted Car Price Prediction Tool</p>
+            </div>
+
+            <!-- What We Do Section -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">What We Do</h2>
+                <p class="text-gray-600 mb-4">
+                    AutoValue Pro uses machine learning algorithms to predict used car prices accurately. Our model considers multiple factors including the car's age, mileage, brand, and market conditions to provide you with reliable price estimates.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="text-center p-4">
+                        <div class="text-blue-500 text-4xl mb-2">86%</div>
+                        <p class="text-gray-600">Accuracy Rate</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-blue-500 text-4xl mb-2">10K+</div>
+                        <p class="text-gray-600">Predictions Made</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-blue-500 text-4xl mb-2">23</div>
+                        <p class="text-gray-600">Car Brands</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works Section -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">How It Works</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">1</div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Data Collection</h3>
+                            <p class="text-gray-600">Input your car's details including year, mileage, brand, and other specifications.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">2</div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Analysis</h3>
+                            <p class="text-gray-600">Our ML model processes the data using regression algorithms and market trends.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">3</div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Price Prediction</h3>
+                            <p class="text-gray-600">Receive an accurate price estimate based on comprehensive data analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-semibold text-gray-800 mb-2">Machine Learning Model</h3>
+                        <p class="text-gray-600">Powered by regression algorithms trained on extensive car market data.</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-semibold text-gray-800 mb-2">Real-Time Analysis</h3>
+                        <p class="text-gray-600">Get instant price predictions based on current market conditions.</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-semibold text-gray-800 mb-2">Multiple Factors</h3>
+                        <p class="text-gray-600">Considers various parameters for accurate price estimation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-semibold text-gray-800 mb-2">User-Friendly Interface</h3>
+                        <p class="text-gray-600">Simple and intuitive design for easy price prediction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Get in Touch</h2>
+                <p class="text-gray-600 mb-6">Have questions about our car price prediction tool? We're here to help!</p>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <a href="mailto:support@autovalue.pro" class="text-blue-500 hover:text-blue-600">mrbill1800@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <!-- components/footer.html -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">AutoValue Pro</h3>
+                    <p class="text-gray-400">Accurate car price predictions using regression machine learning.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Predict Price</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: mrbill1800@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AutoValue Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

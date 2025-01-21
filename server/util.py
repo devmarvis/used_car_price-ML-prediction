@@ -42,7 +42,7 @@ def data_processor(user_inputs):
             elif col == "Year":
                 processed_inputs[col] = int(val) - __min_car_year["min_car_year"]
             else:
-                processed_inputs[col] = int(val)
+                processed_inputs[col] = float(val)
         else:
             processed_inputs[col + "_" + val] = 1
 
@@ -60,23 +60,3 @@ def predict_price(car_details):
 
 if __name__ == "__main__":
     load_saved_artifacts()
-    print(data_processor({
-        "Year": 2024,
-        "Present_Price": 2.5,
-        "Owner": 2,
-        "Driven_kms": 23000,
-        "Brand": "Honda",
-        "Fuel_Type": "Petrol",
-        "Transmission": "Automatic",
-        "Selling_Type": "Dealer"
-    }))
-    print(predict_price(data_processor({
-        "Year": 2024,
-        "Present_Price": 2.5,
-        "Owner": 2,
-        "Driven_kms": 23000,
-        "Brand": "Honda",
-        "Fuel_Type": "Petrol",
-        "Transmission": "Automatic",
-        "Selling_Type": "Dealer"
-    }))["price"])
