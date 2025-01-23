@@ -1,4 +1,4 @@
-let url = "http://127.0.0.1:5005/predict"
+let url = "https://used-car-price-ml-prediction.onrender.com/predict"
 
 form = document.getElementById("CarDetails");
 price = document.getElementsByClassName("price")[0]
@@ -9,8 +9,6 @@ form.addEventListener("submit", (e) => {
 
    formData = new FormData(e.target)
    formDataObject = Object.fromEntries(formData)
-   
-   console.log(formDataObject);
 
     fetch(url, {
         method: "POST",
@@ -21,13 +19,10 @@ form.addEventListener("submit", (e) => {
     })
     .then(res => res.json())
     .then((data) => {
-        console.log(data);
-        console.log(data["price"]);
         
         price.innerHTML = "₹" + (data["price"] * 1000)
         predicted_tag.classList.remove("hidden")
         predicted_tag.classList.add("flex")
-
         
     })
     .catch(error => console.log("Error", error))
